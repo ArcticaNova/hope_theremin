@@ -672,6 +672,41 @@
         )
       )
     )
+    (symbol "Connector:TestPoint" (pin_numbers hide) (pin_names (offset 0.762) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "TP" (at 0 6.858 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "TestPoint" (at 0 5.08 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 5.08 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "~" (at 5.08 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "test point tp" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "test point" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "Pin* Test*" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "TestPoint_0_1"
+        (circle (center 0 3.302) (radius 0.762)
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+      )
+      (symbol "TestPoint_1_1"
+        (pin passive line (at 0 0 90) (length 2.54)
+          (name "1" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
     (symbol "Connector:USB_C_Receptacle_USB2.0" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
       (property "Reference" "J" (at -10.16 19.05 0)
         (effects (font (size 1.27 1.27)) (justify left))
@@ -1967,6 +2002,9 @@
   (junction (at 242.57 146.05) (diameter 0) (color 0 0 0 0)
     (uuid 64ec4caa-676f-4345-aeac-3dc57ef4ba5d)
   )
+  (junction (at 110.49 26.67) (diameter 0) (color 0 0 0 0)
+    (uuid 6dfca55f-bc7a-4e9d-ba67-b9b09664b4bb)
+  )
   (junction (at 146.05 34.29) (diameter 0) (color 0 0 0 0)
     (uuid 852a9b1f-02ce-48ab-beae-cb43db26770f)
   )
@@ -2393,7 +2431,7 @@
     (stroke (width 0) (type default))
     (uuid ad97ca84-6728-4a3b-853e-be74a87f2fe0)
   )
-  (wire (pts (xy 106.68 26.67) (xy 115.57 26.67))
+  (wire (pts (xy 106.68 26.67) (xy 110.49 26.67))
     (stroke (width 0) (type default))
     (uuid af73bc32-2215-486c-a8e9-7360f4fd00c5)
   )
@@ -2569,6 +2607,10 @@
     (stroke (width 0) (type default))
     (uuid fcb4cf69-ea98-4a1d-b62f-5dd0e33215e0)
   )
+  (wire (pts (xy 110.49 26.67) (xy 115.57 26.67))
+    (stroke (width 0) (type default))
+    (uuid fda2d165-ae6b-4207-ad22-ec20c9bf52b6)
+  )
   (wire (pts (xy 278.13 49.53) (xy 278.13 59.69))
     (stroke (width 0) (type default))
     (uuid ffb8d969-058e-4a2b-bea8-4e7b987d9bc2)
@@ -2629,7 +2671,7 @@
     )
     (pin "1" (uuid 4c542fb3-5dad-4cde-8dbf-96cd1dd6366d))
     (instances
-      (project "theremin_final_submission"
+      (project "theremin_v2"
         (path "/144749e3-ab3b-41cf-88d6-b50149b91fd5"
           (reference "#PWR05") (unit 1)
         )
@@ -2654,7 +2696,7 @@
     )
     (pin "1" (uuid db319eee-d51f-45fc-b4d9-bda2cede6408))
     (instances
-      (project "theremin_final_submission"
+      (project "theremin_v2"
         (path "/144749e3-ab3b-41cf-88d6-b50149b91fd5"
           (reference "#PWR015") (unit 1)
         )
@@ -2679,7 +2721,7 @@
     )
     (pin "1" (uuid a904e863-143f-4689-94e8-a047dcb58182))
     (instances
-      (project "theremin_final_submission"
+      (project "theremin_v2"
         (path "/144749e3-ab3b-41cf-88d6-b50149b91fd5"
           (reference "#PWR06") (unit 1)
         )
@@ -2705,7 +2747,7 @@
     (pin "1" (uuid 77983fee-33fd-43bb-b77e-08f156db9379))
     (pin "2" (uuid 95783aa2-9c13-4f4f-b5c5-3ef8f89bc304))
     (instances
-      (project "theremin_final_submission"
+      (project "theremin_v2"
         (path "/144749e3-ab3b-41cf-88d6-b50149b91fd5"
           (reference "R3") (unit 1)
         )
@@ -2730,7 +2772,7 @@
     )
     (pin "1" (uuid 3ddec3d2-2b1a-4bf3-a27e-fb41179988dc))
     (instances
-      (project "theremin_final_submission"
+      (project "theremin_v2"
         (path "/144749e3-ab3b-41cf-88d6-b50149b91fd5"
           (reference "#PWR07") (unit 1)
         )
@@ -2755,7 +2797,7 @@
     )
     (pin "1" (uuid 5e5961ba-fb4e-4b9a-b89e-a69fc5ea6df6))
     (instances
-      (project "theremin_final_submission"
+      (project "theremin_v2"
         (path "/144749e3-ab3b-41cf-88d6-b50149b91fd5"
           (reference "#PWR03") (unit 1)
         )
@@ -2780,7 +2822,7 @@
     )
     (pin "1" (uuid 681ce111-2e64-4cea-844d-646f0bb1221c))
     (instances
-      (project "theremin_final_submission"
+      (project "theremin_v2"
         (path "/144749e3-ab3b-41cf-88d6-b50149b91fd5"
           (reference "#PWR024") (unit 1)
         )
@@ -2811,7 +2853,7 @@
     (pin "1" (uuid 8ed6e80d-d08f-4add-8933-aad0c44af5f6))
     (pin "2" (uuid 5ca59c9f-9339-4e41-aff9-ac71251990cc))
     (instances
-      (project "theremin_final_submission"
+      (project "theremin_v2"
         (path "/144749e3-ab3b-41cf-88d6-b50149b91fd5"
           (reference "C1") (unit 1)
         )
@@ -2836,7 +2878,7 @@
     )
     (pin "1" (uuid 06bbe802-46d7-4683-8e78-b3ed9f9a5294))
     (instances
-      (project "theremin_final_submission"
+      (project "theremin_v2"
         (path "/144749e3-ab3b-41cf-88d6-b50149b91fd5"
           (reference "#PWR017") (unit 1)
         )
@@ -2862,7 +2904,7 @@
     (pin "1" (uuid 6f8b0981-d3c7-431c-8b6a-65be951d68da))
     (pin "2" (uuid b45729f2-2ff1-4527-a444-cf7aac7a1c81))
     (instances
-      (project "theremin_final_submission"
+      (project "theremin_v2"
         (path "/144749e3-ab3b-41cf-88d6-b50149b91fd5"
           (reference "R1") (unit 1)
         )
@@ -2887,7 +2929,7 @@
     )
     (pin "1" (uuid 1ae7a064-f173-48ea-bae4-fc728909d2de))
     (instances
-      (project "theremin_final_submission"
+      (project "theremin_v2"
         (path "/144749e3-ab3b-41cf-88d6-b50149b91fd5"
           (reference "#PWR09") (unit 1)
         )
@@ -2912,7 +2954,7 @@
     )
     (pin "1" (uuid 99a34b22-6497-4b2c-b9e9-d1098403b935))
     (instances
-      (project "theremin_final_submission"
+      (project "theremin_v2"
         (path "/144749e3-ab3b-41cf-88d6-b50149b91fd5"
           (reference "#PWR027") (unit 1)
         )
@@ -2942,7 +2984,7 @@
     )
     (pin "1" (uuid f13d5eb4-112d-4a0d-8ea4-a62e0e806d7b))
     (instances
-      (project "theremin_final_submission"
+      (project "theremin_v2"
         (path "/144749e3-ab3b-41cf-88d6-b50149b91fd5"
           (reference "AE1") (unit 1)
         )
@@ -2967,7 +3009,7 @@
     )
     (pin "1" (uuid 9cce5c24-346a-495e-a4a3-c5678976388b))
     (instances
-      (project "theremin_final_submission"
+      (project "theremin_v2"
         (path "/144749e3-ab3b-41cf-88d6-b50149b91fd5"
           (reference "#PWR025") (unit 1)
         )
@@ -2997,7 +3039,7 @@
     )
     (pin "1" (uuid 43031b1b-d642-4940-b4cd-8007c9eec737))
     (instances
-      (project "theremin_final_submission"
+      (project "theremin_v2"
         (path "/144749e3-ab3b-41cf-88d6-b50149b91fd5"
           (reference "#PWR021") (unit 1)
         )
@@ -3046,7 +3088,7 @@
     (pin "B9" (uuid fcbe71ba-cf1c-4d5b-b5d2-b5f24fd18a56))
     (pin "S1" (uuid 6fe70ecd-677f-4452-96e9-76fced491402))
     (instances
-      (project "theremin_final_submission"
+      (project "theremin_v2"
         (path "/144749e3-ab3b-41cf-88d6-b50149b91fd5"
           (reference "J2") (unit 1)
         )
@@ -3116,7 +3158,7 @@
     (pin "8" (uuid 240ff738-8ca5-4c72-b7f6-24229ce67af8))
     (pin "9" (uuid e22f45b0-99f2-42ff-81db-e7a1bbfc15ed))
     (instances
-      (project "theremin_final_submission"
+      (project "theremin_v2"
         (path "/144749e3-ab3b-41cf-88d6-b50149b91fd5"
           (reference "U4") (unit 1)
         )
@@ -3146,7 +3188,7 @@
     )
     (pin "1" (uuid c231159c-c45b-4cb2-b20f-85dcabdf6bf9))
     (instances
-      (project "theremin_final_submission"
+      (project "theremin_v2"
         (path "/144749e3-ab3b-41cf-88d6-b50149b91fd5"
           (reference "#PWR012") (unit 1)
         )
@@ -3172,7 +3214,7 @@
     (pin "1" (uuid 933f6e33-9d7e-49c7-abd4-9a279a9757d3))
     (pin "2" (uuid 7757f7f0-4fbe-4147-aaa3-851cc66aedf2))
     (instances
-      (project "theremin_final_submission"
+      (project "theremin_v2"
         (path "/144749e3-ab3b-41cf-88d6-b50149b91fd5"
           (reference "SW1") (unit 1)
         )
@@ -3202,7 +3244,7 @@
     )
     (pin "1" (uuid 4c4f5658-a249-41f9-a392-2efcbff612f4))
     (instances
-      (project "theremin_final_submission"
+      (project "theremin_v2"
         (path "/144749e3-ab3b-41cf-88d6-b50149b91fd5"
           (reference "#PWR023") (unit 1)
         )
@@ -3232,7 +3274,7 @@
     )
     (pin "1" (uuid acfd343b-8099-47fe-8814-b2189e56bb60))
     (instances
-      (project "theremin_final_submission"
+      (project "theremin_v2"
         (path "/144749e3-ab3b-41cf-88d6-b50149b91fd5"
           (reference "#PWR02") (unit 1)
         )
@@ -3258,7 +3300,7 @@
     (pin "1" (uuid 964d8e17-4a24-4a7d-8938-d5e3407faf2e))
     (pin "2" (uuid c64fa20d-fc53-4256-983c-c56daf287d52))
     (instances
-      (project "theremin_final_submission"
+      (project "theremin_v2"
         (path "/144749e3-ab3b-41cf-88d6-b50149b91fd5"
           (reference "C4") (unit 1)
         )
@@ -3283,7 +3325,7 @@
     )
     (pin "1" (uuid 6baabcce-94b9-44b9-a661-f5da90547e26))
     (instances
-      (project "theremin_final_submission"
+      (project "theremin_v2"
         (path "/144749e3-ab3b-41cf-88d6-b50149b91fd5"
           (reference "#PWR08") (unit 1)
         )
@@ -3314,7 +3356,7 @@
     (pin "1" (uuid bffe9227-d233-4f66-ae96-f95a955debc6))
     (pin "2" (uuid 0c1d9f5f-da58-4f39-bbc3-726cab296d73))
     (instances
-      (project "theremin_final_submission"
+      (project "theremin_v2"
         (path "/144749e3-ab3b-41cf-88d6-b50149b91fd5"
           (reference "R2") (unit 1)
         )
@@ -3352,7 +3394,7 @@
     (pin "14" (uuid a8ef4ea3-196e-408d-bb98-adedeb67eb5f))
     (pin "7" (uuid c538eead-38cb-43b0-9bb2-def2f9cc6f5e))
     (instances
-      (project "theremin_final_submission"
+      (project "theremin_v2"
         (path "/144749e3-ab3b-41cf-88d6-b50149b91fd5"
           (reference "U2") (unit 1)
         )
@@ -3369,7 +3411,7 @@
     (property "Value" ".1uF" (at 219.71 22.225 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0201_0603Metric" (at 216.8652 24.13 0)
+    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 216.8652 24.13 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 215.9 20.32 0)
@@ -3378,7 +3420,7 @@
     (pin "1" (uuid 922d40ea-f227-4330-aaac-6f949d969ce4))
     (pin "2" (uuid dd26bbd7-fd77-49b0-afc1-a3d1685b5c6d))
     (instances
-      (project "theremin_final_submission"
+      (project "theremin_v2"
         (path "/144749e3-ab3b-41cf-88d6-b50149b91fd5"
           (reference "C9") (unit 1)
         )
@@ -3400,7 +3442,7 @@
     (property "Value" "10uF" (at 119.38 32.385 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0201_0603Metric" (at 116.5352 34.29 0)
+    (property "Footprint" "Capacitor_SMD:C_1206_3216Metric" (at 116.5352 34.29 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 115.57 30.48 0)
@@ -3409,7 +3451,7 @@
     (pin "1" (uuid f9968d15-319e-40b8-845a-8749a5558b18))
     (pin "2" (uuid cc739f73-c149-480b-b40e-60a0c062cd12))
     (instances
-      (project "theremin_final_submission"
+      (project "theremin_v2"
         (path "/144749e3-ab3b-41cf-88d6-b50149b91fd5"
           (reference "C12") (unit 1)
         )
@@ -3439,7 +3481,7 @@
     )
     (pin "1" (uuid 4290a043-5db0-4b76-bfee-c947b157327c))
     (instances
-      (project "theremin_final_submission"
+      (project "theremin_v2"
         (path "/144749e3-ab3b-41cf-88d6-b50149b91fd5"
           (reference "#PWR011") (unit 1)
         )
@@ -3506,7 +3548,7 @@
     (pin "3" (uuid 6b982ff0-6520-4f1d-a7a2-c588917ba298))
     (pin "4" (uuid 8ee7db98-fc3c-4980-abf3-603cd71ff1b5))
     (instances
-      (project "theremin_final_submission"
+      (project "theremin_v2"
         (path "/144749e3-ab3b-41cf-88d6-b50149b91fd5"
           (reference "R11") (unit 1)
         )
@@ -3531,7 +3573,7 @@
     )
     (pin "1" (uuid dd7bb1c0-da16-412e-a6a8-93bb526465f8))
     (instances
-      (project "theremin_final_submission"
+      (project "theremin_v2"
         (path "/144749e3-ab3b-41cf-88d6-b50149b91fd5"
           (reference "#PWR019") (unit 1)
         )
@@ -3561,7 +3603,7 @@
     )
     (pin "1" (uuid e21b8226-00f0-47ec-9e12-2e490955d1cc))
     (instances
-      (project "theremin_final_submission"
+      (project "theremin_v2"
         (path "/144749e3-ab3b-41cf-88d6-b50149b91fd5"
           (reference "#PWR016") (unit 1)
         )
@@ -3569,6 +3611,31 @@
       (project "ESP32_S2_SOLO_N4 Kicad Reference Design"
         (path "/781e630a-908b-4db2-a21c-46db7fc2ebca"
           (reference "#PWR05") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Connector:TestPoint") (at 110.49 26.67 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 6148b3a4-f9a3-4223-80a4-6c69638a98c0)
+    (property "Reference" "TP1" (at 106.68 31.75 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Value" "TestPoint" (at 106.68 33.02 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" (at 105.41 26.67 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 105.41 26.67 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 0fb30873-7669-4a40-9c6f-afb69c6c6c32))
+    (instances
+      (project "theremin_v2"
+        (path "/144749e3-ab3b-41cf-88d6-b50149b91fd5"
+          (reference "TP1") (unit 1)
         )
       )
     )
@@ -3591,7 +3658,7 @@
     )
     (pin "1" (uuid 616fa745-363d-4636-9b7b-5b51373c5af5))
     (instances
-      (project "theremin_final_submission"
+      (project "theremin_v2"
         (path "/144749e3-ab3b-41cf-88d6-b50149b91fd5"
           (reference "#PWR014") (unit 1)
         )
@@ -3616,7 +3683,7 @@
     )
     (pin "1" (uuid 44c947f3-53e9-4d24-a49f-89cc76e03c20))
     (instances
-      (project "theremin_final_submission"
+      (project "theremin_v2"
         (path "/144749e3-ab3b-41cf-88d6-b50149b91fd5"
           (reference "#PWR022") (unit 1)
         )
@@ -3659,7 +3726,7 @@
     (pin "14" (uuid 3304c286-f05b-471d-b831-8cd20ef7527e))
     (pin "7" (uuid 62e601e3-38ab-44fd-bc62-d0d0621a0d2a))
     (instances
-      (project "theremin_final_submission"
+      (project "theremin_v2"
         (path "/144749e3-ab3b-41cf-88d6-b50149b91fd5"
           (reference "U2") (unit 3)
         )
@@ -3685,7 +3752,7 @@
     (pin "1" (uuid 1a96802c-d4fe-4053-b02c-38fd321f8701))
     (pin "2" (uuid 7893eb64-43cd-4595-b975-e25ffaa612aa))
     (instances
-      (project "theremin_final_submission"
+      (project "theremin_v2"
         (path "/144749e3-ab3b-41cf-88d6-b50149b91fd5"
           (reference "C11") (unit 1)
         )
@@ -3716,7 +3783,7 @@
     (pin "1" (uuid d6cb3251-482a-407e-88bf-9b8c39024c12))
     (pin "2" (uuid 97de7b94-f553-4738-b4f4-7aaa22482095))
     (instances
-      (project "theremin_final_submission"
+      (project "theremin_v2"
         (path "/144749e3-ab3b-41cf-88d6-b50149b91fd5"
           (reference "R14") (unit 1)
         )
@@ -3747,7 +3814,7 @@
     (pin "1" (uuid 81a48fbe-9b6f-41d6-835e-4a000b204758))
     (pin "2" (uuid 2c4f6c57-a2fd-4d40-9d27-0016b9dfa7ce))
     (instances
-      (project "theremin_final_submission"
+      (project "theremin_v2"
         (path "/144749e3-ab3b-41cf-88d6-b50149b91fd5"
           (reference "R8") (unit 1)
         )
@@ -3764,7 +3831,7 @@
     (property "Value" ".1uF" (at 137.16 39.37 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Capacitor_SMD:C_0201_0603Metric" (at 140.97 42.2148 0)
+    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 140.97 42.2148 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 137.16 43.18 0)
@@ -3773,7 +3840,7 @@
     (pin "1" (uuid 3d60624b-e977-48a7-8685-cc3ad898ddf5))
     (pin "2" (uuid 1af0614b-a76c-4517-839d-5dcd3f39f89f))
     (instances
-      (project "theremin_final_submission"
+      (project "theremin_v2"
         (path "/144749e3-ab3b-41cf-88d6-b50149b91fd5"
           (reference "C7") (unit 1)
         )
@@ -3816,7 +3883,7 @@
     (pin "14" (uuid d95fda79-3fdc-4258-a41a-e0beae654d5c))
     (pin "7" (uuid 0ac52c89-f0fa-4526-95c1-40f471a798ff))
     (instances
-      (project "theremin_final_submission"
+      (project "theremin_v2"
         (path "/144749e3-ab3b-41cf-88d6-b50149b91fd5"
           (reference "U2") (unit 2)
         )
@@ -3848,7 +3915,7 @@
     (pin "7" (uuid 9de6b28d-c585-4b00-ae30-ad77627175c8))
     (pin "8" (uuid 0f1d7ae6-c265-4871-a0ab-06e8ab4cf594))
     (instances
-      (project "theremin_final_submission"
+      (project "theremin_v2"
         (path "/144749e3-ab3b-41cf-88d6-b50149b91fd5"
           (reference "U3") (unit 1)
         )
@@ -3873,7 +3940,7 @@
     )
     (pin "1" (uuid fc85c93f-8576-4f4d-b238-02544a9e9194))
     (instances
-      (project "theremin_final_submission"
+      (project "theremin_v2"
         (path "/144749e3-ab3b-41cf-88d6-b50149b91fd5"
           (reference "#PWR01") (unit 1)
         )
@@ -3898,7 +3965,7 @@
     )
     (pin "1" (uuid c9041ec9-581e-42a0-9a09-e87af355d71c))
     (instances
-      (project "theremin_final_submission"
+      (project "theremin_v2"
         (path "/144749e3-ab3b-41cf-88d6-b50149b91fd5"
           (reference "#PWR04") (unit 1)
         )
@@ -3924,7 +3991,7 @@
     (pin "1" (uuid d6361787-c7d1-4ea5-8578-f124dce6dcb3))
     (pin "2" (uuid e9ae82d6-2762-43fa-9842-870180ac4212))
     (instances
-      (project "theremin_final_submission"
+      (project "theremin_v2"
         (path "/144749e3-ab3b-41cf-88d6-b50149b91fd5"
           (reference "R12") (unit 1)
         )
@@ -3967,7 +4034,7 @@
     (pin "14" (uuid 21f07f31-5650-4e56-a681-7de8c7b1125d))
     (pin "7" (uuid 2a473e52-6ada-43be-be9c-6023f696a08a))
     (instances
-      (project "theremin_final_submission"
+      (project "theremin_v2"
         (path "/144749e3-ab3b-41cf-88d6-b50149b91fd5"
           (reference "U2") (unit 4)
         )
@@ -3993,7 +4060,7 @@
     (pin "1" (uuid 21d03f29-f26f-4ebf-9b01-a79fb8c9f0c8))
     (pin "2" (uuid 84733a4f-68d9-409d-ae5e-fb56e5b07a15))
     (instances
-      (project "theremin_final_submission"
+      (project "theremin_v2"
         (path "/144749e3-ab3b-41cf-88d6-b50149b91fd5"
           (reference "R6") (unit 1)
         )
@@ -4018,7 +4085,7 @@
     )
     (pin "1" (uuid e5b65773-1e7f-4fd6-9ced-ffd5d54247dd))
     (instances
-      (project "theremin_final_submission"
+      (project "theremin_v2"
         (path "/144749e3-ab3b-41cf-88d6-b50149b91fd5"
           (reference "#PWR010") (unit 1)
         )
@@ -4044,7 +4111,7 @@
     (pin "1" (uuid 1550e93e-8c58-4f4d-be37-1e02036d7660))
     (pin "2" (uuid fca51ec3-3a8d-4a2b-a6bc-b7f5563e545a))
     (instances
-      (project "theremin_final_submission"
+      (project "theremin_v2"
         (path "/144749e3-ab3b-41cf-88d6-b50149b91fd5"
           (reference "R13") (unit 1)
         )
@@ -4075,7 +4142,7 @@
     (pin "1" (uuid 5152a2db-bc38-45ef-9b82-df37679b86a4))
     (pin "2" (uuid 173cbaf5-e7af-48dc-8185-bfc9b8081685))
     (instances
-      (project "theremin_final_submission"
+      (project "theremin_v2"
         (path "/144749e3-ab3b-41cf-88d6-b50149b91fd5"
           (reference "SW2") (unit 1)
         )
@@ -4105,7 +4172,7 @@
     )
     (pin "1" (uuid 515c0db0-dbfd-40b8-8058-55d1d6b67737))
     (instances
-      (project "theremin_final_submission"
+      (project "theremin_v2"
         (path "/144749e3-ab3b-41cf-88d6-b50149b91fd5"
           (reference "#PWR028") (unit 1)
         )
@@ -4137,7 +4204,7 @@
     (pin "2" (uuid 6c4299b4-2ab6-4d5d-95b4-ef1017bcd86b))
     (pin "3" (uuid 4d187951-5c16-47cf-b44c-d4ff8754f3f5))
     (instances
-      (project "theremin_final_submission"
+      (project "theremin_v2"
         (path "/144749e3-ab3b-41cf-88d6-b50149b91fd5"
           (reference "U5") (unit 1)
         )
@@ -4168,7 +4235,7 @@
     (pin "1" (uuid e7f8eb2c-df3f-44e3-afbd-df1e29d559bf))
     (pin "2" (uuid 8f2fdafb-0490-4fef-bf5e-270fc71528b5))
     (instances
-      (project "theremin_final_submission"
+      (project "theremin_v2"
         (path "/144749e3-ab3b-41cf-88d6-b50149b91fd5"
           (reference "C8") (unit 1)
         )
@@ -4211,7 +4278,7 @@
     (pin "14" (uuid d0db8c03-5ffd-48bf-aed8-054032d21cab))
     (pin "7" (uuid 42c955b7-825c-42b0-8c37-e78273d74a2b))
     (instances
-      (project "theremin_final_submission"
+      (project "theremin_v2"
         (path "/144749e3-ab3b-41cf-88d6-b50149b91fd5"
           (reference "U2") (unit 5)
         )
@@ -4237,7 +4304,7 @@
     (pin "1" (uuid f8b9f7e3-a737-4268-aa31-c18764a8245e))
     (pin "2" (uuid 71c10786-a00f-4ba1-8098-33194df13547))
     (instances
-      (project "theremin_final_submission"
+      (project "theremin_v2"
         (path "/144749e3-ab3b-41cf-88d6-b50149b91fd5"
           (reference "R7") (unit 1)
         )
@@ -4263,7 +4330,7 @@
     (pin "1" (uuid cc16d93f-303b-449b-97c9-e8489779f978))
     (pin "2" (uuid e0441924-8f75-4551-91d8-7887be2ba919))
     (instances
-      (project "theremin_final_submission"
+      (project "theremin_v2"
         (path "/144749e3-ab3b-41cf-88d6-b50149b91fd5"
           (reference "R5") (unit 1)
         )
@@ -4289,7 +4356,7 @@
     (pin "1" (uuid dd788309-f5c2-419a-8f89-3fbb9df4c356))
     (pin "2" (uuid 7625e1f7-1f81-442f-8e50-61c7164ae5e4))
     (instances
-      (project "theremin_final_submission"
+      (project "theremin_v2"
         (path "/144749e3-ab3b-41cf-88d6-b50149b91fd5"
           (reference "R4") (unit 1)
         )
@@ -4314,7 +4381,7 @@
     )
     (pin "1" (uuid c887fc82-9e68-41bc-95be-cd355e7f893e))
     (instances
-      (project "theremin_final_submission"
+      (project "theremin_v2"
         (path "/144749e3-ab3b-41cf-88d6-b50149b91fd5"
           (reference "#PWR026") (unit 1)
         )
@@ -4345,7 +4412,7 @@
     (pin "1" (uuid cd191dc7-0271-4e50-8e57-a784bdcaca44))
     (pin "2" (uuid 534ee795-79fc-4b9b-9449-75e816234c3b))
     (instances
-      (project "theremin_final_submission"
+      (project "theremin_v2"
         (path "/144749e3-ab3b-41cf-88d6-b50149b91fd5"
           (reference "R10") (unit 1)
         )
@@ -4371,7 +4438,7 @@
     (pin "1" (uuid 3e4c1272-3c19-41c7-83e5-9798ffec1745))
     (pin "2" (uuid e5d47b73-921c-49f9-8be2-952f77e9a05f))
     (instances
-      (project "theremin_final_submission"
+      (project "theremin_v2"
         (path "/144749e3-ab3b-41cf-88d6-b50149b91fd5"
           (reference "C2") (unit 1)
         )
@@ -4403,7 +4470,7 @@
     (pin "7" (uuid 268ba5d7-5da1-4997-8983-253e87b19d52))
     (pin "8" (uuid 8ff82c47-f66c-4ecf-91bc-0d52688a623b))
     (instances
-      (project "theremin_final_submission"
+      (project "theremin_v2"
         (path "/144749e3-ab3b-41cf-88d6-b50149b91fd5"
           (reference "U1") (unit 1)
         )
@@ -4428,7 +4495,7 @@
     )
     (pin "1" (uuid 553ed2bd-06f8-473f-bc05-d007b8ecb600))
     (instances
-      (project "theremin_final_submission"
+      (project "theremin_v2"
         (path "/144749e3-ab3b-41cf-88d6-b50149b91fd5"
           (reference "#PWR013") (unit 1)
         )
@@ -4460,7 +4527,7 @@
     (pin "2" (uuid be8c919a-d30a-4c99-83ff-3e62cb43c437))
     (pin "3" (uuid abefefa7-a9aa-4c1e-b8ed-4fab9c2c9dd4))
     (instances
-      (project "theremin_final_submission"
+      (project "theremin_v2"
         (path "/144749e3-ab3b-41cf-88d6-b50149b91fd5"
           (reference "RV1") (unit 1)
         )
@@ -4477,7 +4544,7 @@
     (property "Value" ".1uF" (at 273.05 55.88 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Capacitor_SMD:C_0201_0603Metric" (at 276.86 58.7248 0)
+    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 276.86 58.7248 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 273.05 59.69 0)
@@ -4486,7 +4553,7 @@
     (pin "1" (uuid 09ee332d-9d59-408c-a2d2-d6a827a2770c))
     (pin "2" (uuid ce787d72-7a6c-4d9c-b13f-0fafee72c3d9))
     (instances
-      (project "theremin_final_submission"
+      (project "theremin_v2"
         (path "/144749e3-ab3b-41cf-88d6-b50149b91fd5"
           (reference "C10") (unit 1)
         )
@@ -4516,7 +4583,7 @@
     )
     (pin "1" (uuid 24332080-fcec-4c33-819e-c0c689f73cdd))
     (instances
-      (project "theremin_final_submission"
+      (project "theremin_v2"
         (path "/144749e3-ab3b-41cf-88d6-b50149b91fd5"
           (reference "J3") (unit 1)
         )
@@ -4542,7 +4609,7 @@
     (pin "1" (uuid adf46e72-7270-4eb1-bde8-0e1f7d2358c3))
     (pin "2" (uuid 94404040-895e-4a32-ade6-2fefd97830bc))
     (instances
-      (project "theremin_final_submission"
+      (project "theremin_v2"
         (path "/144749e3-ab3b-41cf-88d6-b50149b91fd5"
           (reference "C3") (unit 1)
         )
@@ -4567,7 +4634,7 @@
     )
     (pin "1" (uuid 16e440d7-2e83-4be4-a285-b010a6280ab9))
     (instances
-      (project "theremin_final_submission"
+      (project "theremin_v2"
         (path "/144749e3-ab3b-41cf-88d6-b50149b91fd5"
           (reference "#PWR020") (unit 1)
         )
