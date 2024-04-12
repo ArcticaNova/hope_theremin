@@ -1,9 +1,0 @@
-(fp_lib_table
-  (version 7)
-  (lib (name "PJ_035_SMT_TR")(type "KiCad")(uri "${KIPRJMOD}/PJ_035_SMT_TR")(options "")(descr ""))
-  (lib (name "NCP")(type "KiCad")(uri "${KIPRJMOD}/KiCADv6 3/footprints.pretty")(options "")(descr ""))
-  (lib (name "HEF4093BP_652")(type "KiCad")(uri "${KIPRJMOD}/HEF4093BP_652")(options "")(descr ""))
-  (lib (name "TYPE-C-31-M-12")(type "KiCad")(uri "${KIPRJMOD}/TYPE-C-31-M-12")(options "")(descr ""))
-  (lib (name "RM2012A-502_104-PBVW10")(type "KiCad")(uri "${KIPRJMOD}/RM2012A-502_104-PBVW10")(options "")(descr ""))
-  (lib (name "esp32")(type "KiCad")(uri "${KIPRJMOD}/KiCADv6 5/footprints.pretty")(options "")(descr ""))
-)
